@@ -14,7 +14,7 @@ const updateImages = (e) => {
 			url : URL.createObjectURL(file)
 		}
 	})
-	setallImages((prevImages) => prevImages.concat(toAdd));
+	setallImages(allImages.concat(toAdd));
 };
 const delPhoto = (photo)=>{
 	setallImages(allImages.filter(image => photo.name !== image.name))
